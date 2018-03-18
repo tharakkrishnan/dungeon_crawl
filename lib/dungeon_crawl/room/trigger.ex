@@ -1,3 +1,3 @@
 defmodule DungeonCrawl.Room.Trigger do
-    @callback run(character :: any, action :: any) :: any
-  end
+    @callback run(Character.t, Action.t) :: {Character.t, atom}
+end
